@@ -7,7 +7,7 @@ Started playing with `Svelte` and this is my first attempt to create re-usable c
 ### Instalation
 
 ```
-npm install svelte-inputs
+npm install svelte-custom-input
 ````
 
 ### Properties
@@ -20,7 +20,7 @@ npm install svelte-inputs
 
 Somewhere is your `Svelte` code:
 ```javascript
-import svInput from 'svelte-input'
+import svInput from 'svelte-custom-input'
 
 let inputText = 'My input value'
 let placeholder = 'Placeholder text'
@@ -30,6 +30,11 @@ let placeholder = 'Placeholder text'
 And in the `html` part:
 
 ```html
-<svInput bind:value={inputText} showPlaceholder={true} placeholder={placeholder} disabled={false} />
+<svInput 
+    bind:value={inputText} 
+    showPlaceholder={true} 
+    placeholder={placeholder} 
+    disabled={false} 
+/>
 ```
 

@@ -1,14 +1,22 @@
 <script>
-  export let placeholder = "";
+  export let placeholder = "PLACEHOLDER";
   export let value = "";
   export let disabled = false;
+  export let showPlaceholder = true;
+
+  let placeholderStyle = "";
+
+  if (!showPlaceholder) {
+    placeholderStyle = "0px auto";
+  } else {
+    placeholderStyle = "15px auto";
+  }
 </script>
 
 <style>
   .q-input {
     display: grid;
-    grid-template-rows: 15px auto;
-    max-width: 200px;
+    /* max-width: 200px; */
   }
 
   .title {
@@ -49,7 +57,7 @@
   .a-field__input {
     display: block;
     box-sizing: border-box;
-    width: 285px;
+    width: 100%;
   }
 
   .a-field__input:focus {
@@ -94,8 +102,10 @@
   }
 </style>
 
-<div class="q-input">
-  <span class="title">{placeholder}</span>
+<div class="q-input" style="grid-template-rows: {placeholderStyle};">
+  {#if showPlaceholder}
+    <span class="title">{placeholder}</span>
+  {/if}
   <label class="field a-field a-field_a1">
     <input class="field__input a-field__input" {disabled} bind:value />
   </label>

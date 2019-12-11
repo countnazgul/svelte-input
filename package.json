@@ -1,5 +1,18 @@
 {
-  "name": "SvelteComponent",
+  "name": "svelte-input",
+  "version": "0.1.0",
+  "description": "Svelte input component",
+  "author": {
+    "email": "stefan.stoichev@gmail.com",
+    "name": "Stefan Stoichev @countnazgul",
+    "url": "https://sstoichev.eu"
+  },
+  "homepage": "https://github.com/countnazgul/svelte-input",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/countnazgul/svelte-input.git"
+  },
+  "license": "MIT",
   "svelte": "src/index.svelte",
   "module": "index.mjs",
   "main": "index.js",

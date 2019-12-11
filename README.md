@@ -2,6 +2,7 @@
 
 Started playing with `Svelte` and this is my first attempt to create re-usable component ... no one said that it will be useful :)
 
+![screenshot](https://github.com/countnazgul/svelte-input/raw/master/images/screenshot.png)
 
 ### Instalation
 
